@@ -5,6 +5,7 @@ volumes:
 
 services:
   nginx:
+    network_mode: host
     image: nginx:1.19-alpine
     hostname: nginx
     ports:
@@ -16,11 +17,13 @@ services:
       - web
 
   redis:
+    network_mode: host
     image: redis:6-alpine
     ports:
       - "6379:6379"
 
   db:
+    network_mode: host
     image: postgres:10-alpine
     ports:
       - "5432:5432"
@@ -28,6 +31,7 @@ services:
       POSTGRES_PASSWORD: postgres
 
   web:
+    network_mode: host
     build:
       context: .
       dockerfile: docker/web/Dockerfile
@@ -44,6 +48,7 @@ services:
     command: docker/web/run_web.sh
 
   worker: &worker
+    network_mode: host
     build:
       context: .
       dockerfile: docker/web/Dockerfile
@@ -55,6 +60,7 @@ services:
     command: docker/web/celery/worker/run.sh
 
   scheduler:
+    network_mode: host
     <<: *worker
     command: docker/web/celery/scheduler/run.sh
 
