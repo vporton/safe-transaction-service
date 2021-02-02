@@ -67,6 +67,9 @@ class TestCommands(TestCase):
         self.assertEqual(last_proxy_factory.initial_block_number, last_proxy_factory_initial_block)
         self.assertEqual(last_proxy_factory.tx_block_number, last_proxy_factory_initial_block)
 
+    def test_setup_service_bsc(self):
+        self._test_setup_service(EthereumNetwork.BSC)
+
     def test_setup_service_rinkeby(self):
         self._test_setup_service(EthereumNetwork.RINKEBY)
 
