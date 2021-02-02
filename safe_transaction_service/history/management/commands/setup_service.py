@@ -52,6 +52,9 @@ MASTER_COPIES: Dict[EthereumNetwork, List[Tuple[str, int, str]]] = {
         ('0x8942595A2dC5181Df0465AF0D7be08c8f23C93af', 6766257, '0.1.0'),
         ('0xAC6072986E985aaBE7804695EC2d8970Cf7541A2', 6569433, '0.0.2'),
     ],
+    EthereumNetwork.BSC: [
+        ('0xc36fb474A6cf392f3c7C0e16A5003265E8Cc4395', 4534988, '1.1.1'), # FIXME: Correct contract address?
+    ],
     EthereumNetwork.RINKEBY: [
         ('0x6851D6fDFAfD08c0295C392436245E5bc78B0185', 6723632, '1.2.0'),
         ('0x34CfAC646f301356fAa8B21e94227e3583Fe3F5F', 5590754, '1.1.1'),
@@ -95,6 +98,9 @@ PROXY_FACTORIES: Dict[EthereumNetwork, List[Tuple[str, int]]] = {
         ('0x76E2cFc1F5Fa8F6a5b3fC4c8F4788F0116861F9B', 9084508),  # v1.1.1
         ('0x50e55Af101C777bA7A1d560a774A82eF002ced9F', 8915731),  # v1.1.0
         ('0x12302fE9c02ff50939BaAaaf415fc226C078613C', 7450116),  # v1.0.0
+    ],
+    EthereumNetwork.BSC: [
+        ('0xc4445660FF28aD439bE06EE152acd877915bC0dD', 4534988, '1.1.1'), # FIXME: Correct contract address?
     ],
     EthereumNetwork.RINKEBY: [
         ('0x76E2cFc1F5Fa8F6a5b3fC4c8F4788F0116861F9B', 5590757),

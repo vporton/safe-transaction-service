@@ -16,6 +16,8 @@ class EnsClient:
             url = base_url + 'ensrinkeby'
         elif network_id == 5:  # Goerli
             url = base_url + 'ensgoerli'
+        elif network_id == 56:  # BSC
+            url = base_url + 'bsc'  # FIXME: Does it work?
         else:  # Fallback to mainnet
             url = base_url + 'ens'
         self.url: str = url
