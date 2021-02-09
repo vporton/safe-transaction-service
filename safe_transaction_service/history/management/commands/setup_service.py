@@ -100,7 +100,7 @@ PROXY_FACTORIES: Dict[EthereumNetwork, List[Tuple[str, int]]] = {
         ('0x12302fE9c02ff50939BaAaaf415fc226C078613C', 7450116),  # v1.0.0
     ],
     EthereumNetwork.BSC: [
-        ('0xeDfEd1FB74EA4190D0FD4F4d5989301124a2A88C', 4721950), # v1.1.1 # FIXME: Correct contract address?
+        ('0x795ea5ABE5EbE4b1E35c2Ff0538C1EEaD2AFc66E', 4720394), # v1.1.1 # FIXME: Correct contract address?
     ],
     EthereumNetwork.RINKEBY: [
         ('0x76E2cFc1F5Fa8F6a5b3fC4c8F4788F0116861F9B', 5590757),
