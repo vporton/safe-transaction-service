@@ -13,6 +13,7 @@ RUN set -ex \
 	&& buildDeps=" \
 		build-essential \
 		libssl-dev \
+    git \
 		" \
     && apt-get update \
     && apt-get install -y --no-install-recommends $buildDeps \
