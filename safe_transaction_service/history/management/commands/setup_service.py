@@ -53,7 +53,7 @@ MASTER_COPIES: Dict[EthereumNetwork, List[Tuple[str, int, str]]] = {
         ('0xAC6072986E985aaBE7804695EC2d8970Cf7541A2', 6569433, '0.0.2'),
     ],
     EthereumNetwork.BSC: [
-        ('0xcB76c9fE8d7cF26E80006A709Df383704A4242B4', 4718654, '1.2.0'),
+        ('0x951e473fDEd05d15E4Bbb4B56C715EEe8C27B5A6', 4720388, '1.2.0'),
     ],
     EthereumNetwork.RINKEBY: [
         ('0x6851D6fDFAfD08c0295C392436245E5bc78B0185', 6723632, '1.2.0'),
