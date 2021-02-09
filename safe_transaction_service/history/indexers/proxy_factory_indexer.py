@@ -36,6 +36,7 @@ class ProxyFactoryIndexer(EthereumIndexer):
         self.proxy_factory_contract = get_proxy_factory_contract(self.ethereum_client.w3)
         self.proxy_creation_topic = construct_event_topic_set(self.proxy_factory_contract.events.ProxyCreation().abi,
                                                               None)[0]
+        print("Topic: ", self.proxy_creation_topic)
 
     @property
     def database_field(self):
