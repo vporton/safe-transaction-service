@@ -197,7 +197,9 @@ class BalanceService:
         :return: current USD price for ethereum using Kraken
         :raises: CannotGetEthereumPrice
         """
-        return self._get_binance_price('ETHUSDT')
+        return self._get_binance_price('BNBUSDT') \
+            if self.ethereum_network == EthereumNetwork.BSC else \
+                self._get_binance_price('ETHUSDT')
 
     def get_eth_usd_price_kraken(self) -> float:
         """
