@@ -232,6 +232,8 @@ class BalanceService:
         elif self.ethereum_network in (EthereumNetwork.ENERGY_WEB_CHAIN, EthereumNetwork.VOLTA):
             return self.get_ewt_usd_price_kucoin()
         else:
+            if self.ethereum_network == EthereumNetwork.BSC:
+                return self.get_eth_usd_price_binance()
             try:
                 return self.get_eth_usd_price_kraken()
             except CannotGetEthereumPrice:
