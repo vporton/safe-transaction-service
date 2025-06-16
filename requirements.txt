@@ -28,6 +28,6 @@ pillow==8.1.0
 psycogreen==1.0.2
 psycopg2-binary==2.8.6
 redis==3.5.3
-requests==2.25.1
+requests==2.32.4
 web3==5.15.0
 cachetools==4.2.1
